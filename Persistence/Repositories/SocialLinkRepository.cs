@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
-    public class ProgrammingLanguageRepository : EFRepositoryBase<ProgrammingLanguage, BaseDbContext>, IProgrammingLanguageRepository
+    public class SocialLinkRepository : EFRepositoryBase<SocialLink, BaseDbContext>, ISocialLinkRepository
     {
-        public ProgrammingLanguageRepository(BaseDbContext context) : base(context)
+        public SocialLinkRepository(BaseDbContext context) : base(context)
         {
         }
     }

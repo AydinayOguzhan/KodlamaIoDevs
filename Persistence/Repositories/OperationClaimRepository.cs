@@ -1,6 +1,6 @@
 ﻿using Application.Services.Repositories;
 using Core.Persistence.Repositories;
-using Domain.Entities;
+using Core.Security.Entities;
 using Persistence.Contexts;
 using System;
 using System.Collections.Generic;
@@ -10,9 +10,9 @@ using System.Threading.Tasks;
 
 namespace Persistence.Repositories
 {
-    public class ProgrammingLanguageRepository : EFRepositoryBase<ProgrammingLanguage, BaseDbContext>, IProgrammingLanguageRepository
+    public class OperationClaimRepository : EFRepositoryBase<OperationClaim, BaseDbContext>, IOperationClaimRepository
     {
-        public ProgrammingLanguageRepository(BaseDbContext context) : base(context)
+        public OperationClaimRepository(BaseDbContext context) : base(context)
         {
         }
     }

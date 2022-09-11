@@ -6,13 +6,13 @@ using Microsoft.EntityFrameworkCore.Query;
 
 namespace Core.Persistence.Repositories;
 
-public class EfRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>, IRepository<TEntity>
+public class EFRepositoryBase<TEntity, TContext> : IAsyncRepository<TEntity>, IRepository<TEntity>
     where TEntity : Entity
     where TContext : DbContext
 {
     protected TContext Context { get; }
 
-    public EfRepositoryBase(TContext context)
+    public EFRepositoryBase(TContext context)
     {
         Context = context;
     }

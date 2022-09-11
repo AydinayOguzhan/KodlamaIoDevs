@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices();
-//builder.Services.AddSecurityServices();
+builder.Services.AddSecurityServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
 //builder.Services.AddInfrastructureServices();
 //builder.Services.AddHttpContextAccessor();
@@ -29,6 +29,8 @@ if (app.Environment.IsDevelopment())
 
 if (app.Environment.IsProduction())
     app.ConfigureCustomExceptionMiddleware();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
