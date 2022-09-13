@@ -10,8 +10,6 @@
 		<Folder Include="Features\Authorizations\Constants\" />
 		<Folder Include="Features\Authorizations\Models\" />
 		<Folder Include="Features\ProgrammingLanguages\Constants\" />
-		<Folder Include="Features\SocialLinks\Constants\" />
-		<Folder Include="Features\SocialLinks\Rules\" />
 		<Folder Include="Features\Technologies\Constants\" />
 		<Folder Include="Features\Technologies\Rules\" />
 	</ItemGroup>

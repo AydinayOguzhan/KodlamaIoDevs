@@ -1,5 +1,6 @@
 ﻿using Application.Features.Authorizations.Rules;
 using Application.Features.ProgrammingLanguages.Rules;
+using Application.Features.SocialLinks.Rules;
 using Application.Services.AuthService;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
@@ -22,7 +23,9 @@ namespace Application
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             services.AddScoped<ProgrammingLanguageBusinessRules>();
+            services.AddScoped<SocialLinkBusinessRules>();
             services.AddScoped<AuthorizationBusinessRules>();
+
             services.AddScoped<IAuthSevrice, AuthService>();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
