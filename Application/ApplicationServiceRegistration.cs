@@ -1,6 +1,7 @@
 ﻿using Application.Features.Authorizations.Rules;
 using Application.Features.ProgrammingLanguages.Rules;
 using Application.Features.SocialLinks.Rules;
+using Application.Features.Technologies.Rules;
 using Application.Services.AuthService;
 using Core.Application.Pipelines.Validation;
 using FluentValidation;
@@ -25,6 +26,7 @@ namespace Application
             services.AddScoped<ProgrammingLanguageBusinessRules>();
             services.AddScoped<SocialLinkBusinessRules>();
             services.AddScoped<AuthorizationBusinessRules>();
+            services.AddScoped<TechnologyBusinessRules>();
 
             services.AddScoped<IAuthSevrice, AuthService>();
 
